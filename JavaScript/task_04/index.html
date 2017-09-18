@@ -1,0 +1,92 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 04</title>
+    <style>
+    *{margin:0;padding:0;}
+    ul,li{list-style: none;}
+    #control{padding: 10px}
+    button{background:none;border: 1px solid #999;border-radius:4px;height:22px;width:60px;margin-right:4px;cursor:pointer;}
+    #show{padding:10px;}
+    #show li{display:inline-block;width:30px;height:30px;line-height:30px;font-weight:bold;text-align:center;background-color: #FE9931;color:#fff;}
+    </style>
+  </head>
+<body>
+  <div id="control">
+    <input type="text" id="text">
+    <button id="left_enter">左侧入</button>
+    <button id="right_enter">右侧入</button>
+    <button id="left_leave">左侧出</button>
+    <button id="right_leave">右侧出</button>
+  </div>
+
+  <ul id="show">
+    <!-- <li>1</li>
+    <li>2</li> -->
+  </ul>
+
+<script type="text/javascript">
+(function () {
+  var left_en = document.getElementById('left_enter');
+  var right_en = document.getElementById('right_enter');
+  var left_le = document.getElementById('left_leave');
+  var right_le = document.getElementById('right_leave');
+  var show = document.getElementById('show');
+
+
+  function addValueL(){
+    var text = document.getElementById('text').value;
+    var last_li =show.childNodes[0];
+    var li = document.createElement("li");
+    li.innerHTML = text;
+    li.style.marginLeft = "4px";
+    //insertBefore() 现有的子元素之前插入一个新的子元素。
+    show.insertBefore(li,last_li);
+  }
+
+  function addValueR(){
+    var text = document.getElementById('text').value;
+    var li = document.createElement("li");
+    li.innerHTML = text;
+    li.style.marginRight = "4px";
+    // appendChild() 方法可向节点的子节点列表的末尾添加新的子节点。
+    show.appendChild(li);
+  }
+
+  function LeaValueL(){
+    // var first_li = show.firstChild;
+    // 这里不能用firstChild,因为点第一下时会没反应，会有一个空节点存在，所以采用firstElementChild;
+    var first_li = show.firstElementChild;
+    show.removeChild(first_li);
+    alert(first_li.textContent);
+
+  }
+
+  function LeaValueR(){
+    var last_li = show.lastElementChild;
+    show.removeChild(last_li);
+    alert(last_li.textContent);
+
+  }
+
+  left_en.onclick = function(){
+    addValueL();
+  }
+  
+  right_en.onclick = function(){
+    addValueR();
+  }
+
+  left_le.onclick = function(){
+    LeaValueL();
+  }
+  
+  right_le.onclick = function(){
+    LeaValueR();
+  }
+
+})();
+</script>
+</body>
+</html>
