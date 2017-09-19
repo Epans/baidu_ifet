@@ -4,6 +4,7 @@
 - 任务一：零基础JavaScript编码（一）
   - [代码地址](https://github.com/Epans/baidu_ifet/blob/master/JavaScript/task_01/index.html)
   - [预览地址](http://htmlpreview.github.io/?https://github.com/Epans/baidu_ifet/blob/master/JavaScript/task_01/index.html)
+  - [笔记地址](https://github.com/Epans/baidu_ifet/blob/master/JavaScript/task_01)
 
 - 任务二：零基础JavaScript编码（二）
   - [代码地址](https://github.com/Epans/baidu_ifet/blob/master/JavaScript/task_02/index.html)
@@ -13,4 +14,8 @@
   - [代码地址](https://github.com/Epans/baidu_ifet/blob/master/JavaScript/task_03/index.html)
   - [预览地址](http://htmlpreview.github.io/?https://github.com/Epans/baidu_ifet/blob/master/JavaScript/task_03/index.html)
 
+
+- 任务四：基础JavaScript练习（一）
+  - [代码地址](https://github.com/Epans/baidu_ifet/blob/master/JavaScript/task_04/index.html)
+  - [预览地址](http://htmlpreview.github.io/?https://github.com/Epans/baidu_ifet/blob/master/JavaScript/task_04/index.html)
 ***
